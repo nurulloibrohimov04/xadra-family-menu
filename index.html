@@ -1,1 +1,171 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta name="theme-color" content="#65151a">
+  <title>XADRA — Milliy taomlar</title>
+
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="app">
+
+    <!-- YUQORI PANEL -->
+    <header class="topbar">
+
+      <button
+        class="icon-btn"
+        id="backBtn"
+        aria-label="Orqaga">
+        ‹
+      </button>
+
+      <div class="brand-mini">
+        XADRA
+      </div>
+
+      <button
+        class="lang-btn"
+        id="langBtn"
+        aria-label="Tilni tanlash">
+        🌐 <span id="langLabel">UZ</span>⌄
+      </button>
+
+    </header>
+
+
+    <!-- ASOSIY MENYU -->
+    <main id="view"></main>
+
+
+    <!-- PASTKI NAVIGATSIYA -->
+    <nav class="bottom-nav">
+
+      <button
+        data-route="home"
+        class="nav-item active">
+
+        <span>⌂</span>
+        <small data-i18n="home">
+          Bosh sahifa
+        </small>
+
+      </button>
+
+
+      <button
+        data-route="salads"
+        class="nav-item">
+
+        <span>🥗</span>
+        <small data-i18n="salads">
+          Salatlar
+        </small>
+
+      </button>
+
+
+      <button
+        data-route="dishes"
+        class="nav-item">
+
+        <span>🍽️</span>
+        <small data-i18n="dishes">
+          Taomlar
+        </small>
+
+      </button>
+
+
+      <button
+        data-route="drinks"
+        class="nav-item">
+
+        <span>🥤</span>
+        <small data-i18n="drinks">
+          Ichimliklar
+        </small>
+
+      </button>
+
+    </nav>
+
+  </div>
+
+
+  <!-- TIL TANLASH OYNASI -->
+  <div
+    class="modal-backdrop hidden"
+    id="langModal">
+
+    <section
+      class="lang-modal"
+      role="dialog"
+      aria-modal="true">
+
+      <div class="modal-head">
+
+        <h2 data-i18n="chooseLanguage">
+          Tilni tanlang
+        </h2>
+
+        <button
+          class="close-btn"
+          id="closeLang">
+          ×
+        </button>
+
+      </div>
+
+
+      <button
+        class="language-option"
+        data-lang="uz">
+
+        <span>🇺🇿</span>
+        <b>UZ</b>
+        <small>O‘zbekcha</small>
+        <i>✓</i>
+
+      </button>
+
+
+      <button
+        class="language-option"
+        data-lang="ru">
+
+        <span>🇷🇺</span>
+        <b>RU</b>
+        <small>Русский</small>
+        <i></i>
+
+      </button>
+
+
+      <button
+        class="language-option"
+        data-lang="en">
+
+        <span>🇬🇧</span>
+        <b>EN</b>
+        <small>English</small>
+        <i></i>
+
+      </button>
+
+    </section>
+
+  </div>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
