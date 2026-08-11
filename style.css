@@ -1,0 +1,88 @@
+font-size: 22px;
+}
+
+.language-option b {
+  color: var(--burgundy);
+}
+
+.language-option small {
+  color: var(--muted);
+}
+
+.language-option i {
+  color: var(--burgundy);
+
+  font-style: normal;
+
+  font-weight: 700;
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 800px) {
+
+  body {
+    background:
+      linear-gradient(
+        90deg,
+        #eee3d4,
+        var(--cream),
+        #eee3d4
+      );
+  }
+
+  #app {
+    max-width: 900px;
+
+    margin: auto;
+
+    background: var(--cream);
+
+    min-height: 100vh;
+
+    box-shadow:
+      0 0 40px rgba(67,16,20,.08);
+  }
+
+  .bottom-nav {
+    left: 50%;
+
+    right: auto;
+
+    width: 900px;
+
+    transform: translateX(-50%);
+  }
+
+  .hero {
+    padding-top: 65px;
+  }
+}
+
+
+@media (max-width: 380px) {
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .category-card {
+    min-height: 125px;
+  }
+
+  .category-card .emoji {
+    font-size: 32px;
+  }
+
+  .category-card strong {
+    font-size: 10px;
+  }
+
+  .detail-image {
+    height: 230px;
+  }
+
+}
